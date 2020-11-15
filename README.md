@@ -1,5 +1,8 @@
 # Netflix Clone
 
+![alt text](https://raw.githubusercontent.com/nosisky/Netflix-Clone/master/screenshot.png)
+
+
 ## Table of Contents
 
 - [Technologies](#technology)
