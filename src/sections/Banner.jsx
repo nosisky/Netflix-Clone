@@ -4,7 +4,7 @@ import requests from "../utils/requests";
 import "../css/Banner.css";
 import { Player } from "./Player";
 
-function Banner({ trailerUrl }) {
+function Banner({ trailerUrl, handleClick }) {
   const [movie, setMovie] = useState([]);
 
   useEffect(() => {
@@ -42,7 +42,9 @@ function Banner({ trailerUrl }) {
           </h1>
 
           <div className="banner_buttons">
-            <button className="banner_button">Play</button>
+            <button onClick={() => handleClick(movie)} className="banner_button">
+              Play
+            </button>
             <button className="banner_button">My List</button>
           </div>
           <h1 className="banner_description">

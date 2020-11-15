@@ -17,15 +17,17 @@ const scrollToTop = () => {
   }
 
   const handleClick = (movie) => {
-    const title = movie?.title || movie?.name || "";
+    const title = movie?.original_name || movie?.title || movie?.name || "";
+    console.log({title})
     console.log(movie);
     if (trailerUrl) {
       setTrailerUrl("");
     } else {
       movieTrailer(title)
         .then((url) => {
+          console.log(url, '=-==>')
           const urlParams = new URLSearchParams(new URL(url).search);
-          setTrailerUrl(urlParams.get("v"));
+         setTrailerUrl(urlParams.get("v"));
           scrollToTop()
         })
         .catch((error) => console.log({ error }));
@@ -35,7 +37,9 @@ const scrollToTop = () => {
   return (
     <div className="App">
       <Nav />
-      <Banner trailerUrl={trailerUrl} />
+      <Banner
+        handleClick={handleClick}
+        trailerUrl={trailerUrl} />
       <Row
         title="NETFLIX ORIGINALS"
         fetchUrl={requests.fetchNetflixOriginals}
