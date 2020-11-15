@@ -14,7 +14,7 @@
 
 ## Technology
 
-**netflix-xlone** makes use of a host of modern technologies. The core ones are:
+**Netflix-Clone** makes use of a host of modern technologies. The core ones are:
 
 - REACT: This project makes use of the REACT Javascript library to build the interface. REACT is used for building web pages that are structured as a collection of components. For more information about See [this link](https://facebook.github.io/react/).
 - ECMAScript 6: Also known as ES2015, this is a version of Javascript with
@@ -31,7 +31,6 @@
 
 > run `npm start` to start server
 
-```
 
 ## How to Contribute
 Contributions to this project are welcomed, If you need to contribute to this project, kindly take steps below
@@ -53,4 +52,3 @@ For more details contact nosisky@gmail.com
 
 ### Support or New Features
 Having new features you feel I can add to Netflix clone? Kindly contact me above, I'll look into it. Thanks.
-```
